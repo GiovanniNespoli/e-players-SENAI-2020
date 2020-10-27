@@ -34,9 +34,11 @@
     display: flex;
     justify-content: space-around;
 }
-.cabeçalho img{
+.cabeçalho .zoom{
     width: 100%;
     max-width: 21.18em;
+    overflow: hidden;
+    transition: 0.5s;
 }
 .menu{
     width: 100%;
@@ -60,6 +62,9 @@
 .click:hover{
     color: var(--black);
     background-color: white;
+}
+.zoom:hover {
+    transform:scale(1.1);
 }
 @media screen and (max-width: 1199px){
 
