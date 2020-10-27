@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:wght@300&display=swap');
 
 :root{
+    --padding-buttom: 0.3em 0.5em;
     --background: #1E1C21;
     --black: #000;
     --yellow: #ffff00;
@@ -13,22 +14,55 @@
     border: 0;
     box-sizing: border-box;
 }
-
-body{
-    background-color: var(--black);
+.content{
+    width: 80%;
+    margin: auto;
+    background-color: #ffff0000;
+    height: 100%;
 }
-header{
-    color: var(--yellow);
-    font-family: var(--font);
+.cabeçalho{
+    background-color: #1E1C21;
+    width: 100%;
+    height: 5em;
 }
-
+.flex-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+.cabeçalho img{
+    width: 100%;
+    max-width: 21.18em;
+}
+.menu{
+    width: 100%;
+    max-width: 50em;
+}
+.menu ul{
+    list-style-type: none;
+}
+.click{
+    font-family: ;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-family: roboto;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: var(--padding-buttom);
+    border-radius: 0.35em;
+    transition: 0.5s;
+}
+.click:hover{
+    color: var(--black);
+    background-color: white;
+}
 @media screen and (max-width: 1199px){
-    body{
-        background-color: var(--yellow);
-    }
-    header{
-        color: var(--black);
-    }
+
 }
 
 @media screen and (max-width: 991px){
