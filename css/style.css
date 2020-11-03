@@ -64,7 +64,7 @@
     transform:scale(1.1);
 }
 .banner{
-    position: relative;
+    /* position: relative; */
     border: none;
 }
 .banner-img{
@@ -279,19 +279,30 @@
     background-color: var(--background);
 }
 .nott{
+    /* background-color: navajowhite; */
     width: 90%;
     height: 70px;
     margin: auto;
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
 }
-.nott p{
+.no{
     text-transform: uppercase;
     color: white;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 28px;
+    line-height: 41px;
+}
+.proximo{
+    text-transform: uppercase;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
     line-height: 41px;
 }
 .not-content{
