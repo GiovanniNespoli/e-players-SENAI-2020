@@ -15,6 +15,9 @@
     border: 0;
     box-sizing: border-box;
 }
+.btnMenu{
+    display: none;
+}
 .content{
     width: 80%;
     margin: auto;
@@ -64,68 +67,61 @@
     transform:scale(1.1);
 }
 .banner{
-    /* position: relative; */
-    border: none;
+    max-width: 1440px;
+    height: 470px;
 }
-.banner-img{
-    max-width: 100%;
+.banner-grande{
+    max-width: 1519px;
+    position: absolute;
 }
 .banner-content{
-    height: 37.5em;
-    width: 100%;
-    /* background-color: rgba(0, 0, 255, 0.418); */
-    position: absolute;
-    top: 0;
-}
-.banner-80{
+    width: 90%;
     height: 100%;
-    width: 80%;
-    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* background-color: orange; */
     margin: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 .metade{
-    width: 50%;
-    /* background-color: rgba(255, 166, 0, 0.418); */
-    height: 60%;
+    width: 40%;
+    height: 100%;
+    /* background-color: orangered; */
+    margin-left: 780px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .metade h1{
-    font-size: 5.62em;
+    font-family: Titillium Web;
+    font-weight: bold;
+    font-size: 70px;
     color: white;
-    font-family: var(--font);
-    font-weight: bolder;
-    text-transform: capitalize;
-}
-.metade h1 span{
     text-transform: uppercase;
 }
 .metade p{
-    font-size: 1.87em;
-    color: white;
     font-family: Roboto;
-    text-transform: capitalize;
-    padding-bottom: 60px;
+    font-weight: normal;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 30px;
 }
-.metade .botao-meio{
-    padding: 15px 25px;
-    background-color: red;
-    font-family: Roboto;
-    text-decoration: none;
+.metade a{
+    background-color: #C20000;
+    padding: 14px 30px;
     color: white;
-    border-radius: 8px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
     text-transform: uppercase;
-    font-size: 1.87em;
+    border-radius: 8px;
+    text-decoration: none;
     overflow: hidden;
     transition: 0.5s;
 }
-.botao-meio:hover{
-    transform:scale(1.1);
+.metade a:hover{
+    transform: scale(1.1);
+    background-color: #001F70;
 }
 .games{
     width: 100%;
@@ -484,11 +480,14 @@ footer{
     padding-left: 30px;
     padding-top: 20px;
 }
-.pag a{
+.aa{
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-family: Titillium Web;
+}
+.aa:hover{
+    text-decoration: underline;
 }
 .logo-pe{
     width: 305px;
@@ -540,7 +539,7 @@ footer{
     overflow: hidden;
     transition: 0.5s;
 }
-.bottao a{
+.bottao{
     text-decoration: none;
     font-family: Titillium Web;
     font-size: 18px;
@@ -578,18 +577,281 @@ footer{
 .pe-divulga img:hover{
     transform: scale(1.1);
 }
-@media screen and (max-width: 74.93em){
-    
-}
-
+@media screen and (max-width: 1440px){
+    .banner{
+        height: 600px;
+    }
+    .content{
+        width: 100%;
+    }
+    .flex-content{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .metade{
+        width: 60%;
+        margin-left: 550px;
+    }
+    .metade p{
+        padding-bottom: 70px;
+    }
+    .ez-content{
+        width: 90%;
+    }
+    .text-ez{
+        width: 50%;
+    }
+    .pe-content{
+        width: 100%;
+    }
+@media screen and (max-width: 1200px){
+    .click{
+        font-size: 20px;
+    }
+    .metade{
+        margin: auto;
+    }
+    .metade h1{
+        text-shadow: 5px 0 5px black;
+    }
+    .metade p{
+        text-shadow: 5px 0px 5px black;
+    }
+    .text-ez{
+        width: 60%;
+    }
+    .ez-img{
+        width: 50%;
+    }
+    .times-content{
+        width: 100%;
+    }
+    .not-quadrado{
+        width: 200px;
+    }
+    .not-pp p{
+        font-size: 13px;
+    }
+    .logo-pe{
+        width: 350px;
+        padding-right: 100px;
+    }
+    .pe-titulo p{
+        font-size: 14px;
+    }
+    .email{
+        height: 30px;
+    }
+    .email p{
+        font-size: 20px;
+    }
+    .bottao a{
+        padding: 1px 10px;
+    }
 @media screen and (max-width: 991px){
-    
-}
+    .zoom{
+        display: none;
+    }
+    .metade{
+        width: 100%;
+    }
+    .games{
+        height: 270px;
+    }
+    .img-games{
+        flex-wrap: wrap;
+        width: 60%;
+        justify-content: center;
 
-@media screen and (max-width: 767px){
-    
+    }
+    .hover{
+        padding: 10px 0;
+    }
+    .ezreal-azul{
+        height: 36em;
+        width: 100%;
+    }
+    .ezreal-preto{
+        height: 29em;
+    }
+    .ez-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .text-ez{
+        width: 100%;
+        text-align: center;
+    }
+    .text-ez h2{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .text-ez p{
+        font-size: 16px;
+    }
+    .ez-img{
+        width: 42%;
+    }
+    .content-pequeno-1 {
+        font-size: 18px;
+        width: auto;
+    }
+    .content-2 p{
+        font-size: 18px;
+    }
+    .content-2 img{
+        width: 20%;
+    }
+    .content-em-breve{
+        font-size: 13px;
+        width: 10%;
+    }
+    .not{
+        height: 1200px;
+    }
+    .proximo{
+        display: none;
+    }
+    .not-content{
+        flex-wrap: wrap;
+    }
+    .nott{
+        display: flex;
+        align-items: center;
+    }
+    .noticias{
+        width: 100%;
+    }
+    .placar{
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        height: 300px;
+        flex-wrap: wrap;
+    }
+    .placar-content{
+        width: 40%;
+    }
+    .pe-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    .pe-titulo p{
+        font-size: 1em;
+    }
+    .pag{
+        display: none;
+    }
+    .links-ut{
+        width: auto;
+    }
+    .aa{
+        width: 100%;
+    }
+    .logo-pe{
+        display: none;
+    }
+    .bottao{
+        padding: 1px 31px;
+    }
 }
-
+@media screen and (max-width: 768px){
+    .ez-img{
+        width: 45%;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu ul{
+        width: 100%;
+        height: 350px;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .menu ul a:hover {
+        background-color: unset;
+    }
+    .btnMenu{
+        display: block;
+    }
+    .not-linha{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .not-quadrado{
+        margin: 20px 20px;
+    }
+    .delete{
+        display: none;
+    }
+    .placar{
+        margin-bottom:30px;
+    }
+    .sla{
+        display: none;
+    }
+    .content-pequeno-1{
+        display: none;
+    }
+}
 @media screen and (max-width: 576px){
-    
+    .banner{
+        height: auto;
+    }
+    .metade h1{
+        font-size: 50px;
+    }
+    .metade p{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .img-games{
+        width: 100%;
+        padding-top: 120px;
+    }
+    .games{
+        height: 370px;
+    }
+    .jogos{
+        height: none;
+    }
+    .ezreal-azul{
+        height: 40em;
+    }
+    .ezreal-preto{
+        height: 33em;
+    }
+    .traço{
+        display: none;
+    }
+    .not-content{
+        width: 100%;
+    }
+    .not{
+        height: 1500px;
+    }
+    .not-quadrado{
+        margin: 50px 20px;
+    }
+    .not-content{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .placar{
+        margin-bottom: 100px;
+    }
+    .pe-divulga p{
+        display: none;
+    }
+    .email{
+        width: 55%;
+    }
+    .bottao{
+        padding: 1px 8px;
+    }
 }
