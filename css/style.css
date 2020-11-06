@@ -98,6 +98,7 @@
     font-weight: bold;
     font-size: 80px;
     text-transform: uppercase;
+    width: ;
 }
 .metade p{
     color: white;
@@ -190,7 +191,7 @@
     align-items:  center;
 }
 .text-ez{
-    width: 40%;
+    width: 50%;
     text-align: start;
 }
 .ez-img{
@@ -684,7 +685,7 @@ footer{
     }
     .img-games{
         flex-wrap: wrap;
-        width: 60%;
+        width: 70%;
         justify-content: center;
 
     }
@@ -855,9 +856,11 @@ footer{
     }
 }
 @media screen and (max-width: 576px){
+    .metade h1{
+        font-size: 50px;
+    }
     .img-games{
         width: 100%;
-        padding-top: 120px;
     }
     .games{
         height: 370px;
@@ -878,14 +881,15 @@ footer{
         width: 100%;
     }
     .not{
-        height: 1500px;
+        height: 1800px;
     }
     .not-quadrado{
-        margin: 50px 20px;
+        margin: 50px 50px;
     }
     .not-content{
         height: 100%;
         justify-content: space-between;
+        flex-direction: column;
     }
     .placar{
         margin-bottom: 100px;
@@ -901,5 +905,14 @@ footer{
     }
     .botton{
         width: 100%;
+    }
+    .content-2{
+        width: 30%;
+    }
+    .content-em-breve p{
+        font-size: 1.5em;
+    }
+    .pe-titulo p{
+        font-size: 15px;
     }
 }
