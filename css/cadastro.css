@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+}
+:root{
+    --back: #1E1C21;
+
+}
+.cabecalho{
+    height: 80px;
+    width: 100%;
+    background-color: var(--back);
+}
+.cab-cont{
+    height: 100%;
+    width: 85%;
+    /* background-color: chartreuse; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.links{
+    height: 80%;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+}
+.click{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: rgb(0, 7, 7); */
+    list-style-type: none;
+}
+.click a{
+    /* background-color: yellow; */
+    color: white;
+    font-size: 27px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: roboto;
+    padding: 10px 15px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.click a:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+.img{
+    transition: 0.5s;
+}
+.img:hover{
+    transform: scale(1.1);
+}
+.click li{
+    /* background-color: rgb(10, 28, 192); */
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
